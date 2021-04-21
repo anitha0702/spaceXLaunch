@@ -18,7 +18,7 @@ Project is created with:
 	
  ## Setup
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-To run the angular application locally,
+To run the application locally,
 	$ npm install
 	$ npm start
 	
