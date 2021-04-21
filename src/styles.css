@@ -1,0 +1,120 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.content {
+    background-color: #F7F4F4 !important;
+    height:100% !important;
+    display:block !important;
+    padding-bottom: 0px !important;
+    /* padding-left:25px !important; */
+    padding-top: 15px;
+}
+#main-heading {
+    font-size: x-large !important;
+    font-weight: bold;
+}
+.side-nav {
+    background-color: #ffffff !important;
+}
+.years {
+    display: block;
+    border: black;
+    color: black;
+    background-color: #A0E13F;
+    padding: 2px;
+    text-align: center;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+.main-content {
+}
+.example-card {
+    max-width: 400px;
+    display: block !important;
+    height: 380px !important;
+    margin-bottom: 10px;
+  }
+  .mat-chip.mat-standard-chip {
+    /* background-color: #e0e0e0; */
+    background-color: #A0E13F !important;
+}
+.custom-chip {
+    padding-bottom: 8px !important;
+}
+.buttonStyle {
+    padding-left: 27px !important;
+}
+.mat-standard-chip {
+    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+    padding: 6px 18px 25px 26px !important;
+    border-radius: 6px !important;
+    align-items: center !important;
+    cursor: default;
+    min-height: 32px;
+    height: 1px;
+}
+.mat-chip.mat-standard-chip.mat-chip-selected {
+    background-color: #346cb0 !important;
+    color: white;
+}
+button {outline:0 !important;
+    border: none !important;}
+.css-class-1 {
+    background-color: #5B8D10!important;
+    margin-bottom: 10px !important;
+    border-radius: 6px !important;
+    align-items: center !important;
+}
+.css-class-2 {
+    background-color: #A0E13F !important;
+    /* padding-bottom: 8px !important; */
+    margin-bottom: 10px !important;
+    border-radius: 6px !important;
+    align-items: center !important;
+}
+.lineStyle {
+    border-top: 1px solid black !important;
+    margin-top: -9px !important;
+}
+
+/* media queries */
+@media only screen and (max-width: 700px) {
+    /* For mobile phones: */
+   .side-nav {
+       /* width: 2500px !important; */
+       padding-left: 50px !important;
+   }
+   .example-card {
+        padding-left: 30px !important;  
+        height: 396px !important; 
+}
+.buttonStyle {
+    padding-left: 43px !important;
+}  
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 701px) {
+    .example-card {
+        max-width: 400px  !important;
+        display: block !important;
+        height: 418px !important;
+        margin-bottom: 10px  !important;
+    }
+    .mat-card {
+        transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+        display: block  !important;
+        position: relative  !important;
+        padding: 80px  !important;
+        border-radius: 4px  !important;
+        padding-top: 18px  !important;
+}
+.side-nav {
+    background-color: #ffffff !important;
+    padding-right: 36px !important ;
+}
+.buttonStyle {
+    padding-left: 20px !important;
+}  
+}

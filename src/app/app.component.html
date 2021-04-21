@@ -1,0 +1,56 @@
+<div class="container content">
+  <p id= "main-heading">SpaceX Launch Programs</p>
+  <div class="row">
+    <div class="col-sm-2 col-12 side-nav">
+      <p style="font-weight: bold;">Filters</p>
+      <p style="text-align: center;">Launch Year</p>
+      <hr class="lineStyle">
+      <div class="row">
+        <div class="col-6 buttonStyle"  *ngFor="let yr of yearsArray">
+          <button (click)="yrSelected(yr)" [ngClass]="yr.color === 'enabled' ? 'css-class-1' : 'css-class-2'">
+            {{ yr.year }}</button></div>
+      </div>
+     
+      <p style="text-align: center;">Successful Launch</p>
+      <hr class="lineStyle">
+      <div class="row">
+        <div class="col-6 buttonStyle" *ngFor="let yr of launchArray">
+          <button (click)="launchSelected(yr)" [ngClass]="yr.color === 'enabled' ? 'css-class-1' : 'css-class-2'">
+            {{ yr.name }}</button></div>
+      </div>
+      <p style="text-align: center;">Successful Landing</p>
+      <hr class="lineStyle">
+      <div class="row">
+        <div class="col-6 buttonStyle"*ngFor="let yr of landArray">
+          <button (click)="landingSelected(yr)" [ngClass]="yr.color === 'enabled' ? 'css-class-1' : 'css-class-2'">
+            {{ yr.name }}</button></div>
+      </div>
+
+    </div>
+    <div class="col-10 main-content">
+      <div class="row"> 
+        <div class="col-md-6 col-sm-2 col-xl-3" *ngFor="let initial of allData">
+        <mat-card class="example-card">
+          <br>
+          <img mat-card-image [src]="initial.links.mission_patch_small" alt="Photo of {{initial.links.mission_patch_small}}">
+          <mat-card-content>
+            <ul style="list-style-type:none;padding-left: 0px;">
+              <li>
+                Mission Id:
+                <ul *ngIf="initial.mission_id.length > 0">
+                 <li *ngFor="let ids of initial.mission_id">{{ids}}</li>
+               </ul>
+              </li>
+              <li>Launch Year: {{initial.launch_year}}</li>
+              <li>Successful Launch: {{initial.launch_success}}</li>
+              <li> Successful Landing: {{initial.launch_landing}}</li>
+            </ul>            
+          </mat-card-content>
+        </mat-card>
+      </div></div>
+     
+      
+
+    </div>
+  </div>
+</div>
